@@ -9,7 +9,6 @@ const cors=require('cors')
 const authRouter=require('./routes/auth')
 const gameRouter=require('./routes/game')
 //set configuration
-mongoose.set('strictQuery',false)
 mongoose.connect(process.env.DATABASE_URL,()=>console.log("connected"))
 
 //setup middleware
